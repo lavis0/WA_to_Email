@@ -5,6 +5,13 @@ Welcome to the repo. This document is organised into Preface, Project Overview, 
 ## Preface
 This chapter is to provide an overview of the project, at a glance, and to also provide some definitions for the rest of the document.
 
+### Nomenclature
+- A **User** is a unique individual that accesses a Client.
+- A **Client** is a platform that the User interacts with, that abstracts calls to a Server instance.
+- A **Server** is hosted on private company machines with particular exposed endpoints.
+- A **DB** or **db** is an instance of a database that contains information relevant to the User.
+- **WA** or **wa** is a messaging system that instances of User's use to interact with another User.
+
 ### TLDR
 This project shows a holistic approach to how WA to Email could be handled. The priorities of this project were:
 - To showcase a React-based app, using Server Components
@@ -22,13 +29,6 @@ What this project lacks:
 This project is to show a system design for a far less complicated system than the project I had proposed recently.
 
 Its functionality could have been handled in a point-to-point fashion, but I chose to artificially increase the complexity so it more closely resembles a real system.
-
-### Nomenclature
-- A **User** is a unique individual that accesses a Client.
-- A **Client** is a platform that the User interacts with, that abstracts calls to a Server instance.
-- A **Server** is hosted on private company machines with particular exposed endpoints.
-- A **DB** or **db** is an instance of a database that contains information relevant to the User.
-- **WA** or **wa** is a messaging system that instances of User's use to interact with another User.
 
 ## Project Overview
 I have tried to structure this project so that it is easy to understand the flow of internal and external API calls.
