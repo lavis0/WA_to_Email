@@ -19,12 +19,11 @@ This project shows a holistic approach to how WA to Email could be handled. The 
 - To demonstrate how internal API calls are handled (via `server/commander.py`)
 - To demonstrate a clear separation of concerns and logical flow
 
-What this project lacks:
+Limitations (projected):
 - Does not handle encryption in a way that would be safe to use in production
-- Does not expose endpoints correctly, instead runs from CLI with a dev instance of the frontend
+- Does not expose endpoints ready for production, instead runs from CLI with a dev instance of the frontend
 - Does not implement comprehensive error checking (if at all)
 - Does not have a polished frontend
-- And much more.
 
 This project is to show a system design for a far less complicated system than the project I had proposed recently.
 
