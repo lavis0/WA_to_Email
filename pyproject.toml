@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "server"
+version = "0.1.0"
+description = "A python module acting as a server instance."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "GNU GPLv3"
+authors = [
+    { name = "Joshua Banga", email = "josh@folient.com" },
+]
+dependencies = [
+]
+
+[project.scripts]
+server = "server.__main__:main"

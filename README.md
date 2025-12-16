@@ -37,14 +37,15 @@ I have tried to structure this project so that it is easy to understand the flow
 |-----------------------|-----------------------------------------------------------------|
 | `client/next/`        | Root of the Next.js (React) frontend                            |
 | `server/db/`          | Scripts to start an instance of the tables used in the app      |
-| `server/crypt.py`     | Encryption and decryption pipeline, responds to `GET` with `POST`   |
-| `server/send.py`      | Handling of send to: WA, Email. `db` -> (en-)`crypt` -> `POST`     |
+| `server/crypt.py`     | Encryption and decryption pipeline, responds to `GET` with `POST` |
+| `server/send.py`      | Handling of send to: WA, Email. `db` -> (en-)`crypt` -> `POST`  |
 | `server/recieve.py`   | Moves incoming messages to Messages table.                      |
 | `server/transform.py` | Essentially puts WA into email shape, takes email into WA shape |
-| `server/commander.py` | Commander is the event handler.                                 |
+| `server/app.py`       | The event handler.                                              |
  
 ## Implementation Notes
-TBC.
+(1) The Server is implemented as a python module for ease of handling. Hence, `pyproject.toml` and a few extra files to meet the PyPI suggested module layout.
+(2) 
 
 ## License
 GNU GPLv3 because I want to see any forks of this project, even if it's a simple change :D
